@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 
 # Install app dependencies
 COPY package*.json ./
-RUN npm i
+RUN npm ci
 
 # Bundle app source
 COPY . .
