@@ -25,7 +25,7 @@ script:
   - docker tag reverseproxy chibkay/reverseproxy:v1
 
 after_success: 
-  # login to docker
+  # login to docker using env variables from travis
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   # push images to docker
   - docker push chibkay/udagram-api-feed:v1
