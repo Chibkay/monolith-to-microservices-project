@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: config
 data:
-  POSTGRES_HOST: database-1.c6ncmrfumno3.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: database-2.c6ncmrfumno3.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
   AWS_BUCKET: arn:aws:s3:::mibukaka
   AWS_REGION: us-east-1
